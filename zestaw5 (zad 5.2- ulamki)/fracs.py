@@ -1,4 +1,3 @@
-# fracs.py
 import math
 
 
@@ -84,18 +83,3 @@ def frac2float(frac):
     num, den = _normalize(frac)
     return num / den
 
-#Testy:
-
-print(add_frac([1, 2], [1, 3]))      # [5, 6]
-print(sub_frac([1, 2], [1, 3]))      # [1, 6]
-print(mul_frac([2, 3], [3, 4]))      # [1, 2]
-print(div_frac([1, 2], [3, 4]))      # [2, 3]
-print(is_positive([-1, -2]))         # True
-print(is_zero([0, 5]))               # True
-print(cmp_frac([1, 2], [2, 3]))      # -1
-print(frac2float([3, 4]))            # 0.75
-# przypadki brzegowe
-print(add_frac([1, 2], [-1, 2]))     # [0, 1]
-print(sub_frac([3, 4], [3, 4]))      # [0, 1]
-print(cmp_frac([1, 3], [2, 6]))      # 0
-print(add_frac([2, 4], [3, 6]))      # [1, 1]
